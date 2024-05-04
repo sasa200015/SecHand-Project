@@ -1,0 +1,31 @@
+.container {
+    margin-top: 20px;
+    width: 18em;
+    background: hsl(0, 0%, 61%);
+    transition: 1s ease-in-out;
+    border-top-right-radius: 20px;
+    border-radius: 30px;
+    display: inline-block;
+    flex-direction: column;
+    margin-left: 20px;
+    border: 2px #858685 solid;
+    margin-right: 20px;
+  }
+ p {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    display: block;
+    font-size: 20px;
+  }
+.image{
+    padding-top: 20px;
+    padding-left: 15px;
+    height: 200px;
+    width: 260px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: block;
+  }

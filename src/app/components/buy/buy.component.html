@@ -1,0 +1,11 @@
+<div class="container" *ngFor="let car of CarsList">
+    <img class="image" [src]="car.image_url" alt="">
+    <p> brand name : {{car.brand}}</p>
+    <p> model name : {{car.model}}</p>
+    <p> KiloMeter : {{car.kilometer}} KM </p>
+    <p> The Transmissin : {{car.transmission}}</p>
+    <p> Year : {{car.year}}</p>
+    <p> Address : {{car.location}}</p>
+    <p>Phone : {{car.phone_number}}</p>
+    <p> The Price : {{car.price}}</p>
+</div>
