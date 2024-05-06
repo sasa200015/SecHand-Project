@@ -12,11 +12,13 @@ import { BossService } from './services/boss.service';
 import { getStorage, provideStorage } from '@angular/fire/storage';
 import { HttpClientModule } from '@angular/common/http';
 import { BuyComponent } from './components/buy/buy.component';
+import { WelcomeComponent } from './components/welcome/welcome.component';
 @NgModule({
   declarations: [
     AppComponent,
     SellComponent,
     BuyComponent,
+    WelcomeComponent,
   ],
   imports: [
     BrowserModule,

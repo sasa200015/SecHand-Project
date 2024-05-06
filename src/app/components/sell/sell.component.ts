@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import{BossService}from '../../services/boss.service'
 import { Cars } from '../../interface/cars';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-sell',
   templateUrl: './sell.component.html',
@@ -8,7 +9,7 @@ import { Cars } from '../../interface/cars';
 })
 export class SellComponent {
 
-  constructor(private service:BossService) { }
+  constructor(private service:BossService, private router: Router) { }
 
   imageUrl: string | null = null;
 
@@ -139,8 +140,10 @@ addStudent()
   this.CarsObj.year = this.year;
   this.service.addStudent(this.CarsObj);
       setTimeout(() => {			
-        alert("Added Successfully :")
+        alert("Added Successfully :");
+        this.router.navigate(['/buy']);
       }, 800);  
+  
   this.resetForm();
       }
       else {

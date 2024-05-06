@@ -1,3 +1,15 @@
+<header>
+    <a href="welcome"><span class="com_name">
+            SECHAND
+        </span>
+    </a>
+    <span class="links">
+        <a href="buy" class="hov" >Buy</a>
+        <a href="sell" class="hov" id="active">Sell</a>
+        <a class="hov">Logout</a>
+        <a><i class="fa-regular fa-user" style="font-size: x-large;" ></i></a>
+    </span>
+</header>
 <div class="background">
     <div class="sell_form">
         <div class="position">
@@ -5,21 +17,21 @@
                 <h1>Sell Your Car </h1>
             </div>
             <label>Brand  </label>
-            <input  type="text" required [(ngModel)]="brand">
+            <input  type="text" required [(ngModel)]="brand" class="in">
             <label>Model  </label>
-            <input l type="text" required [(ngModel)]="model">
+            <input  type="text" required [(ngModel)]="model" class="in">
             <label>Year  </label>
-            <input  type="number" required [(ngModel)]="year">
+            <input  type="number" required [(ngModel)]="year" class="in">
             <label>Price  </label>
-            <input  type="number" required [(ngModel)]="price">
+            <input  type="number" required [(ngModel)]="price" class="in">
             <label>Kilometers  </label>
-            <input  type="number" required [(ngModel)]="kilometer">
+            <input  type="number" required [(ngModel)]="kilometer" class="in">
             <label>Transmission  </label>
-            <input  type="text" required [(ngModel)]="transmission">
+            <input  type="text" required [(ngModel)]="transmission" class="in">
             <label>Phone Number  </label>
-            <input  type="number" required [(ngModel)]="phone_number">
+            <input  type="number" required [(ngModel)]="phone_number" class="in">
             <label>Location  </label>
-            <input  type="text" required [(ngModel)]="location">
+            <input  type="text" required [(ngModel)]="location" class="in">
             <div style="text-align:center">
                 <div [innerHtml]='msg' *ngIf="msg" style="color: red;"></div>
                 <div class="box_image" ><img [src]="url"  *ngIf="url" class="image">
@@ -33,7 +45,7 @@
                         </button>           
                     </div>    
             </div>
-            <button value="submit" class="sub" (click)="addStudent()">
+            <button value="submit" class="sub" (click)="addStudent()" >
                 <span class="submit">
                     Submit
                 </span>
